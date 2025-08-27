@@ -28,9 +28,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{display: "flex", flexDirection: "column", minHeight: "100vh"}}
       >
         <Header />
-        <div style={{ height: "calc(100vh - 100px)" }}>{children}</div>
+        <div style={{flex: 1}}>{children}</div>
         <Footer />
       </body>
     </html>
